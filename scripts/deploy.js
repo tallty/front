@@ -10,7 +10,7 @@ const targetOptionsMap = {
     {
       tag: '',
       username: 'web',
-      host: '122.112.248.56',
+      host: 'localhost',
       port: 22,
       localPath,
       remotePath: '/',

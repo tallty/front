@@ -1,6 +1,0 @@
-[submodule "ta-template-form-core"]
-	path = ta-template-form-core
-	url = git@git.tallty.com:ta-vue/ta-template-form-core.git
-[submodule "taIndexView/ta-index-view-core"]
-	path = TaIndexView/ta-index-view-core
-	url = git@git.tallty.com:ta-vue/ta-index-view-core.git
