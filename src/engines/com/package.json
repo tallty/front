@@ -1,0 +1,8 @@
+{
+  "name": "com",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "vue-json-pretty": "^2.4.0"
+  }
+}

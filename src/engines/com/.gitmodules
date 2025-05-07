@@ -1,0 +1,3 @@
+[submodule "com-core"]
+	path = com-core
+	url = git@git.tallty.com:ta-vue/com-core.git

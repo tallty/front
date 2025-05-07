@@ -1,0 +1,3 @@
+[submodule "res-core"]
+	path = res-core
+	url = git@git.tallty.com:ta-vue/res-core.git

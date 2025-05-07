@@ -1,0 +1,235 @@
+@import './colors'
+
+@font-face
+  font-family 'PangMenZhengDao'
+  src url('../../fonts/pangmenzhengdao.ttf')
+// info
+*, *:after, *:before
+  box-sizing border-box
+  margin 0
+  padding 0
+
+html, body
+  margin 0
+  padding 0
+  height 100%
+  background #fff
+  font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+
+h1, h2, h3, h4, h5, h6, p
+  margin 0px
+  padding 0px
+
+h1
+  font-size 22px
+
+h2
+  font-size 20px
+
+h3
+  font-size 18px
+
+h4
+  font-size 16px
+
+button
+  &:focus
+    outline none
+
+// font-color
+.text-danger
+  color #e50114
+
+.text-warning
+  color #eb9e05
+
+.text-primary
+  color #3DA8F5
+
+.text-success
+  color #75C940
+
+// line-text
+.text-pre
+  width 100%
+  white-space pre-wrap
+  word-break break-all
+
+// .text-ellipsis
+//   overflow hidden
+//   width 100%
+//   text-overflow ellipsis
+//   white-space nowrap
+
+.two-line-text
+  display -webkit-box
+  overflow hidden
+  -webkit-box-orient vertical
+  -webkit-line-clamp 2
+
+.three-line-text
+  display -webkit-box
+  overflow hidden
+  -webkit-box-orient vertical
+  -webkit-line-clamp 3
+
+// table
+// 原生表格初始化样式
+.native-table
+  width 100%
+  border-right 1px solid #E5E5E5
+  border-bottom 1px solid #E5E5E5
+  tr
+    th, td
+      padding 13px 16px
+      border-top 1px solid #E5E5E5
+      border-left 1px solid #E5E5E5
+
+.emphasize-ant-table
+  .ant-table-thead
+    background #FAFAFA
+  .group-cell
+    background #FAFAFA
+
+table
+  // 表格悬停行，显示具体的列，可用于表格最后一列的操作列
+  .table-hover-col
+    visibility hidden !important
+  .ant-table-thead
+    th:first-child
+      padding-left 0 !important
+  .ant-table-row
+    td:first-child
+      padding-left 0 !important
+    &:hover
+      .table-hover-col
+        visibility visible !important
+  .click-row
+    cursor pointer
+
+.ant-table-bordered
+  .ant-table-thead
+    th:first-child
+      padding-left 8px !important
+  .ant-table-row
+    td:first-child
+      padding-left 8px !important
+
+// 覆盖 ant-table fixed列时出现断点
+.ant-table-scroll table .ant-table-fixed-columns-in-body
+  visibility visible !important
+
+// 覆盖 ant-table 默认样式
+.ant-table-header
+  background transparent !important
+
+.ant-table-pagination
+  margin 12px 0 !important
+
+.ant-table-thead>tr>th
+  white-space nowrap
+
+// modal 自定义
+.modal-row
+  display flex
+  justify-content space-between
+  align-items center
+  width 100%
+  .search
+    margin -8px 24px
+  .title
+    color rgba(0, 0, 0, 0.85)
+    font-weight 500
+    font-size 16px
+    line-height 22px
+  .count
+    color #808080
+    font-weight 500
+    font-size 14px
+
+// popover
+.popover
+  padding 4px 0px
+  .popover-item
+    display flex
+    justify-content space-between
+    align-items center
+    width 100%
+    height 40px
+    border none
+    cursor pointer
+    &:hover
+      opacity 0.6
+
+.icon-18
+  width 18px
+  height 18px
+
+.icon-16
+  width 16px
+  height 16px
+
+.bold
+  color #000 !important
+  font-weight bold
+
+.hover
+  cursor pointer
+  &:hover
+    opacity 0.8
+
+// 富文本css
+.ck-content
+  width 100%
+  word-break break-word
+  h1, h2, h3, h4, h5
+    color #383838
+    font-weight 500
+    line-height 1.6
+  h1
+    font-size 22px
+  h2
+    font-size 20px
+  h3
+    font-size 18px
+  h4
+    font-size 16px
+  p
+    color #383838
+    font-size 14px
+    line-height 24px
+  img
+    max-width 100%
+  figure
+    margin 0
+    padding 10px
+    text-indent 0
+  .table
+    table
+      td
+        padding 0.6em 1em !important
+        border-width 1px
+        border-style solid
+
+tr
+  &:hover
+    .title
+      color #3DA8F5
+      font-size 14px
+    .operations
+      display flex
+      justify-content space-around
+      align-items center
+      width 100%
+  .operations
+    display none
+
+.ant-tree li .ant-tree-node-content-wrapper
+  width calc(100% - 24px)
+  height auto
+
+.ant-tree > li:last-child
+  padding 0
+
+.clickable
+  cursor pointer
